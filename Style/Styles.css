@@ -1,0 +1,453 @@
+﻿body {
+    background-color: #333333;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+/* BACKGROUND WATERMARK */
+#watermark {
+    background: url("../Images/HapoelLogo.jpg") center center no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* BACKGROUND WATERMARK - END*/
+
+/* TOOL BAR / NAVIGATION BAR */
+.ToolBarBack {
+    background-color: #f2f2f2;
+    height: 80px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+    .ToolBarBack a, #disconnect {
+        float: left;
+        right: 50px;
+        color: #b30000;
+        text-align: center;
+        font-family: Arial;
+        padding: 14px 16px;
+        margin: 13px;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+        .ToolBarBack a.hello:hover {
+            background-color: #b30000;
+            color: black;
+        }
+
+        .ToolBarBack a#active {
+            background-color: #b30000;
+            color: black;
+        }
+    
+
+/* TOOL BAR / NAVIGATION BAR - END*/
+
+/* TOOL BAR - IMAGE LINK DESIGN + SHADOW */
+#imageButton img {
+    height: 65px;
+    width: 65px;
+    margin: 2.5px;
+    position: relative;
+    right: 25px;
+    bottom: 27px;
+    padding: 3px;
+}
+
+#imageButton .media-imgs {
+    -webkit-border-radius: 50%;
+}
+
+    #imageButton .media-imgs:hover {
+        -webkit-animation-name: greenPulse;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-box-shadow: 5px 5px 6px #000000;
+    }
+/* TOOL BAR - IMAGE LINK DESIGN + SHADOW - END*/
+
+/* PICTURE SLIDE */
+.slideWrapper {
+    width: 800px;
+    margin-left: -5.2%;
+    margin-right:auto;
+    float:left;
+    margin-top: 6.6%; 
+}
+/* PICTURE SLIDE - END*/
+
+/* LEAGUE TABLE */
+.wrap-table {
+    width: 800px;
+    padding-bottom: 50px;
+    margin-left: 59%;
+    margin-top:5%
+}
+
+.leaguetable {
+    width: 100%;
+    background: #8c8c8c;
+    border-collapse: collapse;
+}
+
+    .leaguetable tr {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #262626;
+        text-align: center;
+    }
+
+    .leaguetable td, th {
+        padding: 10px;
+    }
+
+    .leaguetable tbody tr:hover {
+        background-color: red;
+    }
+
+    .leaguetable thead tr {
+        background-color: #b32400;
+    }
+/* LEAGUE TABLE - END */
+
+/* TITLE DESIGN */
+#TitleDesign {
+    height: 70px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background-color: #b30000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* TITLE DESIGN - END*/
+
+/* REGISTRATION FORM DESIGN */
+* {
+    box-sizing: border-box;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=radio] {
+    padding: 12px;
+    font-family:Verdana;
+    font-size:15px;
+    vertical-align:middle;
+}
+
+input[type=submit], input[type=reset], input[type=button], a.logOut {
+    background-color: #b30000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+    input[type=submit]:hover, input[type=reset]:hover {
+        background-color: #660000;
+    }
+
+    input[type=submit]:active, input[type=reset]:active {
+        background-color: #660000;
+    }
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ADMIN PAGE DESIGN */
+
+.containerTable{
+    margin-left:49%;
+
+}
+
+.containerForm {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 43%;
+    margin-top: -28%;
+}
+
+/* ADMIN PAGE DESIGN - END*/
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* REGISTRATION FORM DESIGN - END */
+
+/* OPEN ALL - CONTENT */
+.content {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    left: 3%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+    text-align: justify;
+    font-size: 25px;
+}
+/* OPEN ALL - 1ST RIGHT PICTURE & TEXT */
+#Hapoel8485 {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    left: 76%;
+    bottom: 400px ;
+}
+
+#imagetext1 {
+    width: 300px;
+    font-size: 17px;
+    position: relative;
+    left: 76%;
+    bottom: 400px;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+}
+/* OPEN ALL - 1ST RIGHT PICTURE & TEXT - END*/
+
+/* OPEN ALL - 2ND RIGHT PICTURE & TEXT */
+#drivein {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    left: 76%;
+    bottom: 400px;
+}
+
+#imagetext2 {
+    width: 300px;
+    font-size: 17px;
+    position: relative;
+    left: 76%;
+    bottom: 400px;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+    text-align: center;
+}
+/* OPEN ALL - 2ND RIGHT PICTURE & TEXT - END*/
+
+/* OPEN ALL - LIST OF LINKS */
+.listLinks {
+    height: 15%;
+    width: 70%;
+    position: relative;
+    left: 3%;
+    bottom: 520px;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+    padding: 2px;
+    font-size: 25px;
+}
+/* OPEN ALL - LIST OF LINKS - END*/
+
+/* OPEN ALL - LINKS */
+#linkTitles {
+    text-decoration: none;
+}
+
+    #linkTitles:link {
+        color: black;
+    }
+
+    #linkTitles:visited {
+        color: black;
+    }
+
+    #linkTitles:hover {
+        color: red;
+    }
+
+#linkRoster {
+    text-decoration: none;
+}
+
+    #linkRoster:link {
+        color: black;
+    }
+
+    #linkRoster:visited {
+        color: black;
+    }
+
+    #linkRoster:hover {
+        color: red;
+    }
+/* OPEN ALL - LINKS - END*/
+
+/* TITLES -RIGHT PICTURE & TEXT */
+#Hapoel9293 {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    left: 76%;
+    bottom: 310px;
+}
+
+#imagetext3 {
+    width: 300px;
+    font-size: 17px;
+    position: relative;
+    left: 76%;
+    bottom: 310px;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+}
+/* TITLES -RIGHT PICTURE & TEXT - END */
+
+/* CURRENT ROSTER - PLAYERS NAMES */
+.PlayersNames {
+    width: 80%;   
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 10px;
+    background-color: #f2f2f2;
+      
+    font-size: 30px;
+}
+
+
+    .PlayersNames table {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .PlayersNames td {
+        color: red;
+    }
+
+/* CURRENT ROSTER - PLAYERS NAMES - END*/
+
+/* CURRENT ROSTER - PLAYERS PICTURES */
+
+.tbl_img {
+    height: 150px;
+    width: 250px;
+}
+
+/* CURRENT ROSTER - PLAYERS PICTURES - END*/
+
+/* VIDEOS */
+#videos {
+    width: 100%;
+    float: left;
+}
+
+    #videos .section {
+        overflow: auto;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #ccc;
+    }
+
+        #videos .section:last-child {
+            border-bottom: none;
+        }
+
+    #videos ol, #videos li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #videos li {
+        float: left;
+        width: 28%;
+        background: #eee;
+        border-radius: 10px;
+        margin: 0 1% 1% 1%;
+        padding: 20px;
+        border: 1px solid #eee;
+        transition: background 0.25s ease;
+    }
+
+        #videos li:hover {
+            background: #fff;
+        }
+
+        #videos li:nth-child(3n+1) {
+            margin-left: 0;
+        }
+
+        #videos li iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        #videos li i {
+            min-height: 34px;
+            font-style: normal;
+            font-size: 12px;
+            line-height: normal;
+            display: block;
+            margin-top: 10px;
+        }
+/* VIDEOS - END*/
+
+/*FOOTER DESIGN*/
+.footer {
+    padding:4px;
+    left: 0;
+    bottom: 0;
+    margin-top:3%;
+    width: 100%;
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+}
+/*FOOTER DESIGN - END*/
